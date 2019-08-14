@@ -1,0 +1,291 @@
+/* CSS Styling */
+html {
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: normal 0.5em verdana, sans-serif;
+	background: #555;
+	width: 100%;
+}
+
+img {
+	border: 0;
+}
+
+p {
+	padding: 0 0 10px 0;
+	line-height: 1.5em;
+	font-size: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: normal 200% verdana, arial, sans-serif;
+	color: #111; 
+	margin: 0 0 15px 0;
+	padding: 15px 0 5px 0;
+}
+
+ul {
+	margin: 2px 0 22px 17px;
+}
+
+p {
+	font: verdana, arial, sans-serif;
+}
+
+#main, #header, #picture, #navbar, #site_content, #footer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#header {
+	height: 500px;
+	width: 100%;
+	background: #555;
+	position: relative;
+}
+
+
+#pictureHome {
+	height: 300px;
+	width: 550px;
+	margin: 100px 0 150px 0;
+	background: url(images/worldbank_logo.jpg) no-repeat;
+	padding: 0 0 0 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#pictureEdu {
+	height: 300px;
+	width: 550px;
+	margin: 100px 0 150px 0;
+	background: url(images/books.jpg) no-repeat;
+	padding: 0 0 0 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#pictureMil {
+	height: 300px;
+	width: 550px;
+	margin: 100px 0 150px 0;
+	background: url(images/jet.jpg) no-repeat;
+	padding: 0 0 0 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#pictureHlt {
+	height: 300px;
+	width: 550px;
+	margin: 100px 0 150px 0;
+	background: url(images/medical.jpg) no-repeat;
+	padding: 0 0 0 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#pictureCombo {
+	height: 300px;
+	width: 550px;
+	margin: 100px 0 150px 0;
+	background: url(images/money.jpg) no-repeat;
+	padding: 0 0 0 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#pictureEduGrow {
+	height: 300px;
+	width: 550px;
+	margin: 100px 0 150px 0;
+	background: url(images/edugrowth.jpg) no-repeat;
+	padding: 0 0 0 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#pictureHltGrow {
+	height: 300px;
+	width: 550px;
+	margin: 100px 0 150px 0;
+	background: url(images/medgrowth.jpg) no-repeat;
+	padding: 0 0 0 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#pictureText {
+	margin: -100px 0 0 0; 
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	letter-spacing: 0.25em;
+	color: #fff;
+	font-size: 200%;
+	font-family: verdana;
+}
+
+#navbar {
+	width: 1000px;
+	height: 40px;
+	padding: 4px;
+	position: relative;
+	z-index: 1;
+	margin: -195px 0 0 -200px;
+}
+
+#nav {
+	float: left;
+	margin: 300px 0 0 150px;
+	width: 100%;
+}
+
+#nav li {
+	float: left;
+	margin: 5px 0 0 0;
+	padding: 0 0 6px 0;
+	list-style: none;
+}
+
+#nav li a {
+	letter-spacing: 0.1em;
+	font: normal 90% arial, sans-serif;
+	text-transform: uppercase;
+	display: block;
+	float: left;
+	height: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 15px 10px 5px 10px;
+	text-align: center;
+	color: #222;
+	border: 0;
+}
+
+#nav li a:hover {
+	text-decoration: underline;
+}
+
+#nav li.selected a {
+	height: 20px;
+	color: #fff;
+	padding: 20px 10px 0px 10px;
+	text-decoration: none;
+}
+
+#nav li.selected {
+	background: #555;
+	margin: 0 0 5px 0;
+}
+
+#siteContents {
+	background: #eee;
+}
+
+
+#welcome {
+	background: #eee;
+	float: left;
+	width: 100%;
+}
+
+#welcome #welcomecontent {
+	float: left;
+	width: 60%;
+	padding: 0 25px 0 50px;
+	border: none;
+}
+
+
+#welcome #welcomeImage {
+	float: right;
+	width: 31%;
+	background: url(images/global.jpg) no-repeat;
+	background-size: contain;
+	height: 300px;
+	margin-top: 200px;
+	margin-right: 20px;
+}
+
+
+ul li {
+	margin: 5px 0 5px 0;
+	font-size: 1.25em;
+	color: #111;
+}
+
+#welcomecontent ul li {
+	list-style: none;
+	background: url(images/world_bank_back.jpg) no-repeat;
+	background-size: contain;
+	padding: 0 0 0 25px;
+}
+
+
+#letsStart {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#go {
+	background-color: #4eb5f1;;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: verdana, sans-serif;
+	width: 200px;
+	margin: 20px 300px 20px 525px;
+	padding: 10px 5px;
+	border-radius: 12px;
+}
+
+table {
+	text-align: center;
+	margin: 0 250px 0 400px;
+	font-size: 150%;
+}
+
+#table th {
+	font-weight: bold;
+}
+
+#siteContents div {
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+
+
+#copywrite {
+	width: 100%;
+	text-align: center;
+	font-size: 1.25em;
+	font:  verdana, sans-serif;
+	color: #fff;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	float: bottom;
+	padding: 10px 0 10px 0;
+	background: #555;
+}
+
+#copywrite a {
+	color: white;
+	text-decoration: none;
+}
+
+#copywrite a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+
