@@ -1,0 +1,83 @@
+ <!doctype html>
+<html>
+<head>
+	<title>Rent and Housing Analysis</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" href="css/d3-tip.css" />
+
+</head>
+<body>
+	<div id="main">
+		<div id="header" style="width: 100%;">
+			<div id="navbar">
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li> 
+						<li><a href="income.html">Income</a></li>
+						<li class="selected"><a href="employment">Employment</a></li>
+						<li><a href="education.html">Education</a></li>
+						<li><a href="age.html">Age</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="pictureHome"></div>
+			<div id="header-text"> Analyzing Housing and Rent Increases <br> <span style="font-size: 75%"> Across Major U.S. Cities</span> <br> <span style="font-size: 50%"> Economic Indicators - (Un)Employment</span>
+			</div>
+		</div><!--header-->
+		<div id="siteContents-employment">
+			<div id="intro">
+				<h1> Economic Indicators - Unemployment </h1>
+				<p>The unemployment rate is also likely to influence the rent and housing prices in a given city, as it is likely highly correlated with median income and the ability to afford mortgage payments or pay rent.  </p>
+			</div>
+			<div id="dataset-overview">
+				<h1> Unemployment Rate vs. Housing/Rental Prices </h1>
+				
+				<div id="employ-change-over-time"></div> 		
+				
+				<div id="year-selector-income">
+					<span style="font-size: 16px; padding: 0 37px 0 0; margin: 0 0 0 30px;">I want to view the:</span>
+					<select id="input_value_employ" style="width: 100px; margin:  0 0 0 10px;">
+					  <option value="2010">2010</option>
+					  <option value="2011">2011</option>
+					  <option value="2012">2012</option>
+					  <option value="2013">2013</option>
+					  <option value="2014">2014</option>
+					  <option value="2015">2015</option>
+					  <option value="2016">2016</option>
+					  <option value="2017">2017</option>
+					</select>
+					<span style="margin: 0 25px 0 25px;"> </span>
+					<select id="input_value_employ_category" style="width: 200px; margin:  0 0 0 10px;">
+					  <option value="price_">Median Housing Prices</option>
+					  <option value="rent_">Median Rent Prices</option>
+					</select>
+				</div>
+				
+				<div id="employ-vs-payment"></div>
+			</div>
+			
+			<div id="income_conclusions">
+				<p>It appears that the unemployment rate has a slight correlation to the median housing prices between 2010 and 2017, however the unemployment rate appears to be much more closely correlated with the median apartment rent between 2010 and 2017.</p>
+			</div>
+			
+		</div><!--site contents-->
+		<div id="copywrite">
+			COPYWRITE &copy; 
+			<script>
+			var d = new Date(); document.write(d.getFullYear());
+			</script> |
+			<a href="http://www.github.com">GitHub IO</a> |
+			<a href="http://www.zenodo.org">Zenodo</a>
+		</div><!--footer-->
+		
+	</div><!--main-->
+</body>
+</html>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<script src="js/employment.js"></script>
+
+

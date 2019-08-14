@@ -1,0 +1,82 @@
+ <!doctype html>
+<html>
+<head>
+	<title>Rent and Housing Analysis</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" href="css/d3-tip.css" />
+
+</head>
+<body>
+	<div id="main">
+		<div id="header" style="width: 100%;">
+			<div id="navbar">
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li> 
+						<li class="selected"><a href="income.html">Income</a></li>
+						<li><a href="employment">Employment</a></li>
+						<li><a href="education.html">Education</a></li>
+						<li><a href="age.html">Age</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="pictureHome"></div>
+			<div id="header-text"> Analyzing Housing and Rent Increases <br> <span style="font-size: 75%"> Across Major U.S. Cities</span> <br> <span style="font-size: 50%"> Economic Indicators - Income</span>
+			</div>
+		</div><!--header-->
+		<div id="siteContents">
+			<div id="intro">
+				<h1> Economic Indicators - Income </h1>
+				<p>Economic indicators are the most likely cause of the increases we see to rent and housing prices bceause of the direct tie to the ability to pay rent and mortgages. We would expect the median income of a city (a proxy for the wealth of the average citizen) to be directly tied to the value of their property, reflected by home value and rent payments. </p>
+			</div>
+			<div id="dataset-overview">
+				<h1> Median Income </h1>
+				<div id="income-change-over-time"></div> 		
+				
+				<div id="year-selector-income">
+					<span style="font-size: 16px; padding: 0 37px 0 0; margin: 0 0 0 30px;">I want to view the:</span>
+					<select id="input_value_income" style="width: 100px; margin:  0 0 0 10px;">
+					  <option value="2010">2010</option>
+					  <option value="2011">2011</option>
+					  <option value="2012">2012</option>
+					  <option value="2013">2013</option>
+					  <option value="2014">2014</option>
+					  <option value="2015">2015</option>
+					  <option value="2016">2016</option>
+					  <option value="2017">2017</option>
+					</select>
+					<span style="margin: 0 25px 0 25px;"> </span>
+					<select id="input_value_income_category" style="width: 200px; margin:  0 0 0 10px;">
+					  <option value="price_">Median Housing Prices</option>
+					  <option value="rent_">Median Rent Prices</option>
+					</select>
+				</div> </br>
+				<div id="income-vs-payment"></div>
+			</div>
+			
+			<div id="income_conclusions">
+				<p>As we can see, house prices in 2010 show a slightly exponential trent, meaning those cities with higher incomes are seeing their home values increase more rapidly. However, by 2017 a more linear trend appears as some of the other cities have "caught up" to the increase in prices. </p>
+				<p>Rent prices on the other hand immediately show an linear relationship with median income as early as 2010, and this trend continues through 2017.</p>
+			</div>
+			
+		</div><!--site contents-->
+		<div id="copywrite">
+			COPYWRITE &copy; 
+			<script>
+			var d = new Date(); document.write(d.getFullYear());
+			</script> |
+			<a href="http://www.github.com">GitHub IO</a> |
+			<a href="http://www.zenodo.org">Zenodo</a>
+		</div><!--footer-->
+		
+	</div><!--main-->
+</body>
+</html>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<script src="js/income.js"></script>
+
+

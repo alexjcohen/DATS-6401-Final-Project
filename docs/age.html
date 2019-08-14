@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<title>Rent and Housing Analysis</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" href="css/d3-tip.css" />
+
+</head>
+<body>
+	<div id="main">
+		<div id="header" style="width: 100%;">
+			<div id="navbar">
+				<div id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li> 
+						<li><a href="income.html">Income</a></li>
+						<li><a href="employment">Employment</a></li>
+						<li><a href="education.html">Education</a></li>
+						<li class="selected"><a href="age.html">Age</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="pictureHome"></div>
+			<div id="header-text"> Analyzing Housing and Rent Increases <br> <span style="font-size: 75%"> Across Major U.S. Cities</span> <br> <span style="font-size: 50%"> Demographic Indicators - Age</span>
+			</div>
+		</div><!--header-->
+		<div id="siteContents-age">
+			<div id="intro">
+				<h1> Demographic Indicators - Age </h1>
+				<p>Another aspect that might affect the median rent and housing prices is the age distribution of the city - it an "older" or "younger" city. A city with more working-age adults (40-65) may have the potential to drive up housing price due to the higher proportion of people established careers, whereas a "younger" city may see higher apartment prices due to the higher proportion of younger professionals.</p>
+			</div>
+			<div id="dataset-overview">
+				<h1> Age Distributions </h1>
+				<div id="age-change-over-time"></div>
+					<div id="year-selector-age">
+						<span style="font-size: 16px; padding: 0 20px 0 0; margin: 0 0 0 30px;">I want to view the:</span>
+						<select id="input_value_age" style="width: 100px; margin:  0 0 0 10px;">
+						  <option value="2010">2010</option>
+						  <option value="2011">2011</option>
+						  <option value="2012">2012</option>
+						  <option value="2013">2013</option>
+						  <option value="2014">2014</option>
+						  <option value="2015">2015</option>
+						  <option value="2016">2016</option>
+						  <option value="2017">2017</option>
+						</select>
+						<span style="margin: 0 20px 0 10px;"> </span>
+						<select id="input_value_payment_category_age" style="width: 200px; margin:  0 0 0 10px;">
+						  <option value="price_">Median Housing Prices</option>
+						  <option value="rent_">Median Rent Prices</option>
+						</select>
+					</div>
+				<div id="age-vs-payment"></div>
+			</div>	
+			<div id="age_conclusions">
+					<p>Upon examination of the data, it appears that the "age" of the city does not have a significant impact on home and apartment prices</p>
+			</div>	
+		</div><!--site contents-->
+		<div id="copywrite">
+			COPYWRITE &copy; 
+			<script>
+			var d = new Date(); document.write(d.getFullYear());
+			</script> |
+			<a href="http://www.github.com">GitHub IO</a> |
+			<a href="http://www.zenodo.org">Zenodo</a>
+		</div><!--footer-->
+		
+	</div><!--main-->
+</body>
+</html>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<script src="js/age.js"></script>
+
+

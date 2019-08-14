@@ -1,0 +1,117 @@
+ <!doctype html>
+<html>
+<head>
+	<title>Rent and Housing Analysis</title>
+	
+	<link rel="stylesheet" href="css/d3-tip.css" />
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	
+</head>
+<body>
+	<div id="main">
+		<div id="header" style="width: 100%;">
+			<div id="navbar">
+				<div id="nav">
+					<ul>
+						<li class="selected"><a href="index.html">Home</a></li> 
+						<li><a href="income.html">Income</a></li>
+						<li><a href="employment">Employment</a></li>
+						<li><a href="education.html">Education</a></li>
+						<li><a href="age.html">Age</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="pictureHome"></div>
+			<div id="header-text"> Analyzing Housing and Rent Increases <br> <span style="font-size: 75%"> Across Major U.S. Cities</span><br> <span style="font-size: 50%"> Data Overivew</span>
+			</div>
+		</div><!--header-->
+		<div id="siteContents-index">
+			<div id="intro">
+				<h1> Introduction </h1>
+				<p>Housing and rent prices have been increasing all over the country in the past decade post economic collapse of 2008, with a significant increase evident in some of the largest metropolitan areas in the US. This project aims to explore the key factors that may be driving this resurgance in housing and rent prices.  This analysis will focus on the years 2010 - 2017. </p>
+				<p>The data for housing and rent prices comes courtesy of <a href="https://www.zillow.com">zillow.com</a>, the population data comes directly from the <a href="https://www.census.gov/data/datasets/time-series/demo/popest/2010s-total-cities-and-towns.html#ds">US Census Bureau</a> at the state level, and the indicator data comes courtesy of the US Census Bureau's <a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtmlAmerican">American FactFinder</a> website, with the specific economic, age, income, and education statistics found using the following search terms:</p>
+				<ul>
+					<li>Age and Sex: S0101</li>
+					<li>Education: S1501</li>
+					<li>Employment: S2301</li>
+					<li>Income: S1903</li>
+				</ul>
+				<p>Additionally, each of the 15 cities examined in the following analysis has been categorized by region according to the distribution below:</p>
+				<table id="region-table" style="width: 40%; margin-left: auto; margin-right: auto;">
+					<tr>
+						<th>East</th>
+						<th>South</th>
+						<th>Central</th>
+						<th>West</th>
+					</tr>
+					<tr>
+						<td>Boston</td>
+						<td>Atlanta</td>
+						<td>Chicago</td>
+						<td>Los Angeles</td>
+					</tr>
+					<tr>
+						<td>Miami</td>
+						<td>Charlotte</td>
+						<td>Denver</td>
+						<td>Phoenix</td>
+					</tr>
+					<tr>
+						<td>New York</td>
+						<td>Houston</td>
+						<td>St. Louis</td>
+						<td>San Francisco</td>
+					</tr>
+					<tr>
+						<td>Philadelphia</td>
+						<td></td>
+						<td></td>
+						<td>Seattle</td>
+					</tr>
+					<tr>
+						<td>Washington D.C.</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+				
+			</div>
+			<div id="dataset-overview">
+				<h1> Overview of Rent and Housing Data </h1>
+				<p> See below for an overivew of the independent variables, monthly rent and median house price for each of the cities being analyzed. The size of the bubble represents the city population for the selected year  </p></br>
+				<div id="year-selector-home">
+					<span style="font-size: 16px;">Year:</span>
+					<select id="input_value_house_rent" style="width: 100px; margin:  0 0 0 10px;">
+					  <option value="2010">2010</option>
+					  <option value="2011">2011</option>
+					  <option value="2012">2012</option>
+					  <option value="2013">2013</option>
+					  <option value="2014">2014</option>
+					  <option value="2015">2015</option>
+					  <option value="2016">2016</option>
+					  <option value="2017">2017</option>
+					</select>
+				</div></br>
+				<div id="rent-housing-data-chart" style="margin: 0 0 0 50px;"></div>
+			</div>	
+		</div><!--site contents-->
+		<div id="copywrite">
+			COPYWRITE &copy; 
+			<script>
+			var d = new Date(); document.write(d.getFullYear());
+			</script> |
+			<a href="http://www.github.com">GitHub IO</a> |
+			<a href="http://www.zenodo.org">Zenodo</a>
+		</div><!--footer-->
+		
+	</div><!--main-->
+</body>
+</html>
+
+<script src="js/d3.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<script src="js/home.js"></script>
+
